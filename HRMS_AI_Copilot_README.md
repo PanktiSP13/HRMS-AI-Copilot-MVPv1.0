@@ -72,17 +72,6 @@ PostgreSQL & Document Storage
 
 Authenticated requests include the access token. When a request is unauthorized, the networking layer attempts to refresh the session once and retry the request. If refreshing fails, the local session is cleared.
 
-## Demo access
-
-Use the following demo account to explore the application:
-
-| Credential | Value |
-|---|---|
-| **Email** | `chitranshi@mycc.com` |
-| **Password** | `0192837465` |
-
-> **Note:** These are showcase/demo credentials. Avoid using them for real or sensitive data. If this repository is public, use a dedicated demo account and rotate the password if it has been exposed elsewhere.
-
 ## API documentation
 
 Explore the backend endpoints and interactive API documentation:
@@ -93,16 +82,10 @@ The API is organized under the `/api/v1` route prefix.
 
 ## What's next — AI Copilot (v2.0)
 
-The next planned release will introduce the AI Copilot experience, bringing conversational assistance into the HRMS application.
+The next planned release will introduce the AI Copilot experience, bringing conversational assistance into the HRMS app backed by Retrieval-Augmented Generation (RAG). This will allow policy-aware answers grounded in approved HR documents, while keeping the existing HRMS API and authorization model as the source of truth.
 
-The initial direction for v2.0 includes:
 
-- **HR policy Q&A:** Ask questions in natural language and receive answers grounded in approved HR policy documents.
-- **Retrieval-Augmented Generation (RAG):** Retrieve relevant policy content to provide context-aware responses.
-- **Secure HR data access:** Connect AI interactions to backend-controlled data and preserve the existing HRMS authorization model.
-- **AI technology exploration:** Google Gemini and PostgreSQL `pgvector` are planned components of the AI layer.
-
-These are roadmap items for v2.0; they should not be considered available capabilities in MVP v1.0.
+<img width="700" alt="HRMS AI Copilot MVP Banner" src="https://github.com/user-attachments/assets/7ec143ac-599f-4aea-ac25-d960d74c5145" />
 
 ---
 
